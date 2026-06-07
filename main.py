@@ -10,4 +10,11 @@ for i in range(5):
     if word in meme_dict.keys():
         print(meme_dict[word])
     else:
-        print('kata tidak ditemukan')
+        yesno= input('kata tidak ditemukan, mau menambahkannya?(yes/no)')
+        if yesno == 'yes':
+            kunci = input('Tambahkan kunci baru yang tidak ditemukan :')
+            nilai = input('Tambahkan nilai kunci')
+            meme_dict[kunci] = nilai
+            print(meme_dict)
+        else:
+            print(' ')
